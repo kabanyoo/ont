@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Среды разработки ПО: Сравнение и характеристики</title>
+    <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="header__title">Проект на тему:<br>"Среды для разработки ПО и их сравнительная характеристика"</h1>
+        <nav class="header__items">
+            <ul>
+                <li class="header__items-list"><a href="main.html">Введение и основные IDE</a></li>
+                <li class="header__items-list"><a href="compilator.html">Компилятор</a></li>
+                <li class="header__items-list"><a href="interpritator.html">Интерпретатор</a></li>
+                <li class="header__items-list"><a href="debug.html">Отладка</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="introduction">
+            <h2 class="introduction__title">Введение</h2>
+            <p class="introduction__title-desc"><b>Среда разработки (Integrated Development Environment)</b> — это программное обеспечение, объединяющее различные инструменты и функции, необходимые для разработки программного кода. Она предоставляет программисту удобную и интуитивно понятную среду для написания, отладки и тестирования кода, а также автоматизирует некоторые рутинные задачи.</p>
+            <h3 class="introduction__subtitle">Что могут делать программисты в IDE?</h3>
+            <ul class="introduction__items">
+                <li class="introduction__items-list">Писать, просматривать, запускать и отлаживать код внутри одного окна.</li>
+                <li class="introduction__items-list">Редактировать код и частично автоматизировать его рефакторинг, то есть улучшение.</li>
+                <li class="introduction__items-list">Компилировать код, собирать проект.</li>
+                <li class="introduction__items-list">Тестировать написанное — некоторые IDE позволяют эмулировать разные устройства.</li>
+                <li class="introduction__items-list">Быстро искать, устанавливать и подключать новые компоненты.</li>
+                <li class="introduction__items-list">Управлять проектами, создавать их и редактировать.</li>
+                <li class="introduction__items-list">Работать с системами контроля версий.</li>
+                <li class="introduction__items-list">Создавать визуальный интерфейс — если в IDE входит визуальный редактор.</li>
+                <li class="introduction__items-list">Выполнять другие задачи в зависимости от назначения среды и от языка.</li>
+            </ul>
+        </section>
+
+        <section class="ide">
+            <h2 class="ide__title">Основные IDE</h2>
+            <div class="ide vscode">
+                <img src="./images/vscode.jpg" alt="Visual Studio Code" class="vscode__logo logo">
+                <h3 class="vscode__title">Visual Studio Code (VS Code)</h3>
+                <p class="vscode__d ide__d">Легковесный, но мощный редактор кода, поддерживающий множество языков программирования через расширения. Бесплатный и с открытым исходным кодом.</p>
+                <ul>
+                    <li class="ide__sp vscode__subd"><b>Поддерживаемые языки:</b> JavaScript, TypeScript, HTML, CSS, Python, R, Java, Kotlin, Go, Rust и многие другие</li>
+                    <li class="ide__sp vscode__subd"><b>Плюсы:</b> Работает на MacOS, Ubuntu и Windows. Пока недоступен на Android и iOS. Простой open-source редактор и плагины — платить не надо. Потребуется совсем мало ресурсов, чтобы приступить к работе с минималистичным VSC</li>
+                    <li class="ide__sp vscode__subd"><b>Минусы:</b> Требует установки дополнительных расширений для полной функциональности. Несмотря на поддержку .NET-платформы, VCS неудобен для сложных проектов. Многие надстройки имеют низкое качество сборки и не всегда выполняют даже основные функции</li>
+                </ul>
+            </div>
+
+            <div class="ide">
+                <img src="./images/IntelliJ_IDEA.png" alt="IntelliJ IDEA" class="itellij__logo logo">
+                <h3 class="itellij__title">IntelliJ IDEA</h3>
+                <p class="itellij__d ide__d">Интеллектуальная IDE для Java, Kotlin, Scala и других языков JVM. Платная (Ultimate Edition), но есть бесплатная Community Edition.</p>
+                <ul>
+                    <li class="ide__sp itellij__subd"><b>Поддерживаемые языки:</b> Java, Kotlin, Scala, Groovy, CoffeeScript, HTML, XHTML, HAML, PHP, SQL, Go и многие другие</li>
+                    <li class="ide__sp itellij__subd"><b>Плюсы:</b> IDE предлагает множество вариантов исправления кода на более простые и современные методы. Встроенный чат-бот поможет написать простой код и документацию к нему, подобрать имена к переменным и решить другие мелкие задачи.</li>
+                    <li class="ide__sp itellij__subd"><b>Минусы:</b> Требует больше ресурсов, платная версия для полной функциональности. Компания JetBrains приостановила продажи продуктов и услуг в России. Новичкам в программировании такое количество кнопок и вспомогательных окон в IDE может напугать.</li>
+                </ul>
+            </div>
+
+            <div class="ide">
+                <img src="images/eclipse.png" alt="Eclipse" class="eclipse__logo logo">
+                <h3 class="eclipse__title">Eclipse</h3>
+                <p class="eclipse__d ide__d">Бесплатная IDE с открытым исходным кодом, поддерживающая множество языков программирования через плагины.</p>
+                <ul>
+                    <li class="ide__sp eclipse__subd"><b>Поддерживаемые языки:</b> Java, C++, Python, PHP и другие.</li>
+                    <li class="ide__sp eclipse__subd"><b>Плюсы:</b> К достоинствам Eclipse можно добавить прекрасную работу даже на машинах со слабой конфигурацией, кроссплатформенность, полную техническую поддержку даже несмотря на то, что среда является бесплатной.</li>
+                    <li class="ide__sp eclipse__subd"><b>Минусы:</b> Как и любой функциональный продукт, Eclipse может показаться новичку слишком сложным. Нет гарантий надежности. Кроме того, сами создатели Eclipse с каждой новой версией плодят баги, не успевая порой исправлять старые.</li>
+                </ul>
+            </div>
+
+            <div class="ide">
+                <img src="./images/pycharm.png" alt="PyCharm" class="pc__logo logo">
+                <h3 class="pc__title">PyCharm</h3>
+                <p class="pc__d ide__d">IDE специально для Python. Платная (Professional Edition), но есть бесплатная Community Edition.</p>
+                <ul>
+                    <li class="ide__sp pc__subd"><b>Поддерживаемые языки:</b> Python, JavaScript, SQL, XML, HTML, CSS</li>
+                    <li class="ide__sp pc__subd"><b>Плюсы:</b> Интеллектуальное завершение кода, инструменты рефакторинга и интерактивный отладчик. Поддержка нескольких фреймворков Python. Бесплатная и открытая версия для сообщества.</li>
+                    <li class="ide__sp pc__subd"><b>Минусы:</b> Профессиональная версия может работать некорректно на старых или менее мощных компьютерах. Для начинающих обширные возможности PyCharm могут оказаться непосильными, и может потребоваться некоторое время, чтобы изучить и освоить все его возможности.</li>
+                </ul>
+            </div>
+
+            <div class="ide">
+                <img src="./images/vs.png" alt="Visual Studio" class="vs__logo logo">
+                <h3 class="vs__title">Visual Studio</h3>
+                <p class="vs__d ide__d">Visual Studio — это IDE, очень мощная и масштабная, но одновременно с этим тяжеловесная.</p>
+                <ul>
+                    <li class="ide__sp vs__subd"><b>Поддерживаемые языки:</b> Python, JavaScript, SQL, XML, HTML, CSS</li>
+                    <li class="ide__sp vs__subd"><b>Плюсы:</b> В программе есть готовые инструменты для разработки, которые не требуют отдельной установки. Visual Studio функционирует как мощная интегрированная среда разработки, включает создание проектов, интерактивную отладку и профилирование кода.</li>
+                    <li class="ide__sp vs__subd"><b>Минусы:</b> Visual Studio не так легковесен и гибок, как некоторые альтернативы, что может быть недостатком для тех, кто ищет более простой инструмент.</li>
+                </ul>
+            </div>
+
+            <div class="ide">
+                <img src="./images/sl.png" alt="Sublime Text" class="sl__logo logo">
+                <h3 class="sl__title">Sublime Text</h3>
+                <p class="sl__d ide__d">Sublime Text — кросс-платформенный редактор, который используется для написания программного кода на различных языках программирования, а также для вёрстки веб-документов.</p>
+                <ul>
+                    <li class="ide__sp sl__subd"><b>Поддерживаемые языки:</b>С, C++, C#, CSS, D, Dylan, HTML, Java, JavaScript и многие другие</li>
+                    <li class="ide__sp sl__subd"><b>Плюсы:</b> Помимо написания основной программы, в Sublime Text можно набирать скрипты, создавать сайты и онлайн-приложения, осуществлять сборку и тестирование продукта. Среда разработки устроена максимально понятно и просто, что упрощает работу не только опытным разработчикам, но и помогает быстрее освоиться новичкам.</li>
+                    <li class="ide__sp sl__subd"><b>Минусы:</b> Хотя редактор загружается достаточно быстро, по этому параметру он может уступать некоторым аналогам. Некоторые подключаемые модули разрабатываются сторонними программистами, в том числе непрофессионалами, при их работе могут возникать сбои.</li>
+                </ul>
+            </div>
+
+        </section>
+    </main>
+        <!-- <section id="comparison">
+            <h2>Сравнение IDE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>IDE</th>
+                        <th>Языки</th>
+                        <th>Цена</th>
+                        <th>Плюсы</th>
+                        <th>Минусы</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Visual Studio Code</td>
+                        <td>Множество (через расширения)</td>
+                        <td>Бесплатно</td>
+                        <td>Гибкость, расширяемость, кроссплатформенность</td>
+                        <td>Требует установки дополнительных расширений</td>
+                    </tr>
+                    <tr>
+                        <td>IntelliJ IDEA</td>
+                        <td>Java, Kotlin, Scala и другие JVM</td>
+                        <td>Платная (есть Community Edition)</td>
+                        <td>Мощная поддержка Java, инструменты рефакторинга</td>
+                        <td>Требует больше ресурсов, платная версия</td>
+                    </tr>
+                    <tr>
+                        <td>Eclipse</td>
+                        <td>Множество (через плагины)</td>
+                        <td>Бесплатно</td>
+                        <td>Бесплатная, большое сообщество, множество плагинов</td>
+                        <td>Сложная в настройке, требует больше ресурсов</td>
+                    </tr>
+                        <tr>
+                        <td>PyCharm</td>
+                        <td>Python</td>
+                        <td>Платная (есть Community Edition)</td>
+                        <td>Специализирована для Python, отличная поддержка Django</td>
+                        <td>Платная версия</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section> -->
+
+    <footer class="footer">
+        <h2 class="footer__h2">Среды для разработки ПО и их сравнительная характеристика</h2>
+        <div class="footer__p">
+            <p>Выполнил: Астафьев И. В.</p>
+            <p style="font-size: 17px;"><a href="#"><</a>1 страница <a href="compilator.html">></a></p>
+            <p>Группа: ИСП-24</p>
+        </div>
+    </footer>
+
+</body>
+</html>
