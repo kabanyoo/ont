@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #d4d4d4;
-    color: #333;
+    color: #000;
     font-size: 18px;
 }
 
@@ -37,6 +41,7 @@ h2, h3, h4, h5, h6 {
     font-size: 18px;
     color:#fff;
     text-decoration: none;
+    transition: .25s;
 }
 
 .header__items-list, a:hover {
@@ -96,6 +101,24 @@ section {
     display: block;
     margin: 0 auto;
     width: 500px;
+}
+
+.scroll {
+    position: fixed;
+    right: 45px;
+    bottom: 45px;;
+    background-color: #aaaaaa;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.scroll_up {
+    display: block;
+    padding-top: 9px;
+    font-size: 30px;
 }
 
 .footer {

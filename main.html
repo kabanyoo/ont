@@ -8,11 +8,12 @@
 </head>
 <body>
 
-    <header class="header">
+    <header class="header" id="header">
         <h1 class="header__title">Проект на тему:<br>"Среды для разработки ПО и их сравнительная характеристика"</h1>
         <nav class="header__items">
             <ul>
                 <li class="header__items-list"><a href="main.html">Введение и основные IDE</a></li>
+                <li class="header__items-list"><a href="startide.html">Выбор IDE для новичка</a></li>
                 <li class="header__items-list"><a href="compilator.html">Компилятор</a></li>
                 <li class="header__items-list"><a href="interpritator.html">Интерпретатор</a></li>
                 <li class="header__items-list"><a href="debug.html">Отладка</a></li>
@@ -100,67 +101,112 @@
                 <h3 class="sl__title">Sublime Text</h3>
                 <p class="sl__d ide__d">Sublime Text — кросс-платформенный редактор, который используется для написания программного кода на различных языках программирования, а также для вёрстки веб-документов.</p>
                 <ul>
-                    <li class="ide__sp sl__subd"><b>Поддерживаемые языки:</b>С, C++, C#, CSS, D, Dylan, HTML, Java, JavaScript и многие другие</li>
+                    <li class="ide__sp sl__subd"><b>Поддерживаемые языки:</b> С, C++, C#, CSS, D, Dylan, HTML, Java, JavaScript и многие другие</li>
                     <li class="ide__sp sl__subd"><b>Плюсы:</b> Помимо написания основной программы, в Sublime Text можно набирать скрипты, создавать сайты и онлайн-приложения, осуществлять сборку и тестирование продукта. Среда разработки устроена максимально понятно и просто, что упрощает работу не только опытным разработчикам, но и помогает быстрее освоиться новичкам.</li>
                     <li class="ide__sp sl__subd"><b>Минусы:</b> Хотя редактор загружается достаточно быстро, по этому параметру он может уступать некоторым аналогам. Некоторые подключаемые модули разрабатываются сторонними программистами, в том числе непрофессионалами, при их работе могут возникать сбои.</li>
                 </ul>
             </div>
 
+                <section class="table__section">
+                <h2 class="table__title">Сравнение IDE</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IDE</th>
+                            <th>Языки</th>
+                            <th>Платформы</th>
+                            <th>Лицензия</th>
+                            <th>Преимущества</th>
+                            <th>Недостатки</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Visual Studio Code</td>
+                            <td>JavaScript, TypeScript, Python, C++, C#, Java, PHP, Go, Ruby и другие (через расширения)</td>
+                            <td>Windows, macOS, Linux</td>
+                            <td>Бесплатная (Open Source)</td>
+                            <td>Легковесный, быстро работает, огромное количество расширений, встроенный терминал, Git интеграция, IntelliSense (автодополнение), кроссплатформенный.</td>
+                            <td>Требует установки расширений для полноценной работы с некоторыми языками, может быть перегруженным при большом количестве установленных расширений.</td>
+                        </tr>
+                        <tr>
+                            <td>IntelliJ IDEA</td>
+                            <td>Java, Kotlin, Scala, Groovy, Python, JavaScript, TypeScript, PHP, Go, Ruby и другие (через плагины)</td>
+                            <td>Windows, macOS, Linux</td>
+                            <td>Платная (есть Community Edition)</td>
+                            <td>Мощный, интеллектуальный, продвинутый рефакторинг, отличная поддержка Java и Kotlin, интегрированные инструменты тестирования, система контроля версий.</td>
+                            <td>Высокие системные требования, платная версия предлагает больше функций, steep learning curve (сложная кривая обучения) для новичков.</td>
+                        </tr>
+                        <tr>
+                            <td>Eclipse</td>
+                            <td>Java, C/C++, PHP, Python, JavaScript и другие (через плагины)</td>
+                            <td>Windows, macOS, Linux</td>
+                            <td>Бесплатная (Open Source)</td>
+                            <td>Гибкий, настраиваемый, большое количество плагинов, подходит для разработки под различные платформы.</td>
+                            <td>Сложный в настройке, может быть медленным, устаревший интерфейс (по мнению некоторых пользователей).</td>
+                        </tr>
+                        <tr>
+                            <td>PyCharm</td>
+                            <td>Python, но поддерживает и некоторые другие</td>
+                            <td>Windows, macOS, Linux</td>
+                            <td>Платная (есть Community Edition)</td>
+                            <td>Специализирован для Python, отличная поддержка Django, Flask, NumPy, SciPy, отладка, автодополнение, проверка типов, интеграция с Jupyter Notebook.</td>
+                            <td>Может быть ресурсоемким, платная версия предлагает больше функций, ориентирован только на Python.</td>
+                        </tr>
+                        <tr>
+                            <td>Visual Studio</td>
+                            <td>C#, C++, Visual Basic, F#, JavaScript, TypeScript и другие</td>
+                            <td>Windows, macOS</td>
+                            <td>Платная (есть Community Edition)</td>
+                            <td>Мощный, отлично подходит для разработки под Windows (ASP.NET, .NET Framework, .NET Core), интегрированный отладчик, GUI Designer, широкий спектр инструментов.</td>
+                            <td>Большой размер, высокие системные требования, в основном ориентирован на разработку под Windows.</td>
+                        </tr>
+                        <tr>
+                            <td>Sublime Text</td>
+                            <td>С, C++, C#, CSS, D, Dylan, HTML, Java, JavaScript и многие другие</td>
+                            <td>Windows, macOS, Linux</td>
+                            <td>Платная, но есть бесплатная версия для ознакомления</td>
+                            <td>Sublime Text хорошо адаптирован к слабым платформам за счет минимальных требований к ресурсам ПК. Рабочая область в Sublime Text организована максимально удобно для программиста или веб-разработчика.</td>
+                            <td>Стоимость 3-летней лицензии на Sublime Text составляет 99 долларов США. Могут возникать сбои при подключении плагинов, т.к. они могли разрабатываться непрофессионалами.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <h3 class="conc__title">Почему я выбираю Visual Studio Code?</h3>
+            <div class="ide conc__ide">
+                <p class="conc__p-subtitle"><b>1. Бесплатный и с открытым исходным кодом</b></p>
+                <p class="conc__p">VS Code можно использовать бесплатно и на разных платформах (Windows, macOS, Linux). Открытый исходный код позволяет сообществу развивать и улучшать его.</p>
+                <p class="conc__p-subtitle"><b>2. Легкий и быстрый</b></p>
+                <p class="conc__p">VS Code запускается и работает быстро, не требуя больших ресурсов системы.</p>
+                <p class="conc__p-subtitle"><b>3. Отладка</b></p>
+                <p class="conc__p">Встроенный отладчик позволяет находить и исправлять ошибки прямо в редакторе. Поддерживает отладку для многих языков программирования.</p>
+                <p class="conc__p-subtitle"><b>4. Встроенный Git</b></p>
+                <p class="conc__p">Интеграция с Git позволяет управлять версиями кода, выполнять коммиты, просматривать историю изменений и работать с ветками прямо из редактора.</p>
+                <p class="conc__p-subtitle"><b>5. Расширения</b></p>
+                <p class="conc__p"> VS Code поддерживает огромное количество расширений, которые добавляют функциональность для различных языков программирования, фреймворков, инструментов и сервисов. Это позволяет настроить редактор под конкретные нужды.</p>
+                <p class="conc__p-subtitle"><b>6. Поддержка множества языков программирования</b></p>
+                <p class="conc__p">VS Code поддерживает множество языков, включая JavaScript, TypeScript, Python, Java, C++, C#, Go, PHP и многие другие. Благодаря расширениям, поддержка может быть расширена практически для любого языка.</p>
+                <p class="conc__p-subtitle"><b>7. Редактирование</b></p>
+                <p class="conc__p">Редактирование кода в VS Code становится удобнее и быстрее, благодаря подсветке синтаксиса, автоматическому форматированию, поиску и замене, множеству горячих клавиш</p>
+                <p class="conc__p-subtitle"><b>8. Встроенный терминал</b></p>
+                <p class="conc__p">VS Code имеет встроенный терминал, который позволяет выполнять команды и запускать скрипты, не выходя из редактора.</p>
+            </div>
+
         </section>
     </main>
-        <!-- <section id="comparison">
-            <h2>Сравнение IDE</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>IDE</th>
-                        <th>Языки</th>
-                        <th>Цена</th>
-                        <th>Плюсы</th>
-                        <th>Минусы</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Visual Studio Code</td>
-                        <td>Множество (через расширения)</td>
-                        <td>Бесплатно</td>
-                        <td>Гибкость, расширяемость, кроссплатформенность</td>
-                        <td>Требует установки дополнительных расширений</td>
-                    </tr>
-                    <tr>
-                        <td>IntelliJ IDEA</td>
-                        <td>Java, Kotlin, Scala и другие JVM</td>
-                        <td>Платная (есть Community Edition)</td>
-                        <td>Мощная поддержка Java, инструменты рефакторинга</td>
-                        <td>Требует больше ресурсов, платная версия</td>
-                    </tr>
-                    <tr>
-                        <td>Eclipse</td>
-                        <td>Множество (через плагины)</td>
-                        <td>Бесплатно</td>
-                        <td>Бесплатная, большое сообщество, множество плагинов</td>
-                        <td>Сложная в настройке, требует больше ресурсов</td>
-                    </tr>
-                        <tr>
-                        <td>PyCharm</td>
-                        <td>Python</td>
-                        <td>Платная (есть Community Edition)</td>
-                        <td>Специализирована для Python, отличная поддержка Django</td>
-                        <td>Платная версия</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section> -->
+
+        <div class="scroll" id="scroll_up" href="#">
+            <a href="#" class="scroll_up"><span>↑</span></a>
+        </div>
 
     <footer class="footer">
         <h2 class="footer__h2">Среды для разработки ПО и их сравнительная характеристика</h2>
         <div class="footer__p">
             <p>Выполнил: Астафьев И. В.</p>
-            <p style="font-size: 17px;"><a href="#"><</a>1 страница <a href="compilator.html">></a></p>
+            <p style="font-size: 17px;"><a href="title.html"><</a>1 страница<a href="startide.html">></a></p>
             <p>Группа: ИСП-24</p>
         </div>
     </footer>
-
 </body>
 </html>
